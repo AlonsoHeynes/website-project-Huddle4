@@ -1,0 +1,160 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7em;
+  color: hsl(192, 100%, 9%);
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  color: hsl(192, 100%, 9%);
+}
+
+p {
+  font-family: 'Open sans', sans-serif;
+  line-height: 1.5;
+}
+
+.white-btn {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 5px 15px;
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pink-btn {
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 30px;
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+  display: block;
+}
+
+.top-section {
+  background-image: url('../images/bg-hero-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(193, 100%, 96%);
+}
+
+.logo-and-button {
+  padding: 20px;
+}
+
+.img-container {
+  float: left;
+  width: 50%;
+}
+.img-container img {
+  width: 60%;
+}
+
+.btn-container {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.header-text-content {
+  text-align: center;
+}
+
+.illustration img {
+  width: 100%;
+}
+
+header {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header p {
+  color: hsl(192, 100%, 9%);
+}
+
+.pink-btn-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.illustration {
+  padding: 20px;;
+}
+
+
+/*** Middle section ***/
+.middle-section {
+  padding: 30px;
+}
+
+.block {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(238,238,238,1);
+  box-shadow: 0px 0px 15px 3px rgba(238,238,238,1);
+}
+
+.block img {
+  width: 100%;
+}
+
+.block-text {
+  margin-top: 30px;
+}
+
+.block-text p {
+  color: hsl(208, 11%, 55%);
+  font-size: 0.8em;
+}
+
+@media only screen and (min-width: 768px) {
+  .illustration {
+    float: right;
+    width: 50%;
+  }
+  .header-text-content {
+    float: left;
+    width: 50%;
+    padding: 60px 40px 40px;
+    text-align: left;
+  }
+
+  .top-section {
+    padding: 60px;
+  }
+
+  .img-container img {
+    width: auto;
+  }
+
+
+
+}
+
+
+
+
+
+
+/**/
