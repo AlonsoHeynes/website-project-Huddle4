@@ -23,9 +23,19 @@ h2 {
   color: hsl(192, 100%, 9%);
 }
 
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  color: hsl(192, 100%, 9%);
+}
+
 p {
   font-family: 'Open sans', sans-serif;
   line-height: 1.5;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .white-btn {
@@ -47,6 +57,9 @@ p {
   font-family: 'Poppins', sans-serif;
   display: block;
 }
+
+
+/*** Top section ***/
 
 .top-section {
   background-image: url('../images/bg-hero-mobile.svg');
@@ -100,7 +113,7 @@ header p {
 }
 
 
-/*** Middle section ***/
+/***  Middle section  ***/
 .middle-section {
   padding: 30px;
 }
@@ -120,7 +133,8 @@ header p {
 }
 
 .block-text {
-  margin-top: 30px;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .block-text p {
@@ -128,11 +142,97 @@ header p {
   font-size: 0.8em;
 }
 
+.ready-to-build {
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 0;
+}
+.ready-to-build button {
+  margin: 0 auto;
+}
+
+
+/** Bottom section **/
+
+.footer-site {
+  background-color: hsl(192, 100%, 9%);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1em;
+  padding: 80px 15px 15px;
+}
+
+.contact-info ul {
+  color: #fff;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info ul img {
+  width: 45%;
+}
+
+.contact-info ul li {
+  margin-bottom: 20px;
+}
+
+.contact-info ul i {
+  margin-right: 15px;
+}
+
+nav {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media i {
+  color: #fff;
+  font-size: em;
+  border: 1px solid #fff;
+  width: 35px;
+  padding: 0.5em 0.6em;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @media only screen and (min-width: 768px) {
+  h3  {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  .white-btn {
+    font-size: 12px;
+  }
+
   .illustration {
     float: right;
     width: 50%;
   }
+
   .header-text-content {
     float: left;
     width: 50%;
@@ -148,13 +248,50 @@ header p {
     width: auto;
   }
 
+  .block-text {
+    text-align: left;
+    padding: 80px;
+  }
 
+  .block-img {
+    padding: 20px;
+  }
 
+  .block-text p {
+    font-size: .9em;
+  }
+
+  .left {
+    float: left;
+    width: 50%;
+    padding-right: 100px;
+  }
+
+  .right {
+    float: right;
+    width: 50%;
+    padding-left: 100px;
+  }
+
+  .ready-to-build {
+    width: 40%;
+    margin: 40px auto;
+  }
+
+  .ready-to-build button {
+    font-size: 14px;
+  }
+
+  .footer-site section {
+    float: left;
+    width: 25%;
+  }
+
+  .footer-site nav a {
+    margin-left: 150px;
+  }
+
+  .copyright {
+    text-align: right;
+  }
 }
-
-
-
-
-
-
-/**/
